@@ -3,7 +3,7 @@
 Hi, I'm Michael Hammer. If you're interested in learning AI, ML, and DS, then you'll find this content useful. 
 
 Here is where you can find me: 
-- [michaelphammer.com](https://www.michaelphammer.com): A central place for everything I'm up to
+- [michaelphammer.com](https://www.michaelphammer.com): A central place for all my stuff
 - [YouTube Channel](https://www.youtube.com/@michaelphammer): The main place I create content
 - [Newsletter](https://michaelphammer.com/newsletter/): Get notified of everything I'm up to
 
