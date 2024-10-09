@@ -1,4 +1,4 @@
-# What on YouTube! (Click on image)
+# Watch on YouTube! (Click on image)
 
 ### Learn Weights & Biases Now! Beginner Tutorial
 
