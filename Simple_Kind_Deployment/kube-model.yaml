@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-model
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-model # set the label for the k8s Service to match
+  template:
+    metadata:
+      labels:
+        app: my-model
+    spec:
+      containers:
+      - name: my-model
+        image: docker.io/library/my-model:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 5432 # expose port 5432
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-model
+spec:
+  selector:
+    app: my-model # route traffic to Deployments that match this label
+  ports:
+  - protocol: TCP # map traffic for port 80 to port 5432 on the pods
+    port: 80
+    targetPort: 5432
+  type: NodePort
